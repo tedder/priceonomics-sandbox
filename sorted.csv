@@ -1,0 +1,101 @@
+city,state,price median,listings,price stddev
+Indianapolis,IN,650,251,968
+Malibu,CA,304,92,576
+Park City,UT,299,229,1157
+Truckee,NV,275,67,199
+Healdsburg,CA,275,49,365
+Laguna Beach,CA,268,68,276
+Incline Village,NV,259,118,291
+Manhattan Beach,CA,209,55,183
+Charlotte,NC,200,225,457
+Sonoma,CA,200,115,192
+Napa,CA,200,68,186
+Austin,TX,199,2836,304
+La Jolla,CA,195,53,152
+Sausalito,CA,190,71,178
+Hermosa Beach,CA,190,48,336
+Sunny Isles Beach,FL,180,161,115
+New York,NY,170,8044,164
+Boston,MA,160,613,238
+Newport Beach,CA,160,84,179
+Beverly Hills,CA,160,74,722
+Venice,CA,155,242,168
+San Francisco,CA,150,3622,275
+Miami Beach,FL,150,1345,494
+New Orleans,LA,150,833,403
+Miami,FL,150,641,240
+Santa Monica,CA,150,500,153
+Marina Del Rey,CA,150,115,457
+Louisville,KY,150,86,314
+Mill Valley,CA,150,80,134
+Taos,NM,148,52,89
+Sebastopol,CA,145,49,129
+San Diego,CA,130,986,156
+Washington,DC,129,1402,155
+West Hollywood,CA,129,229,105
+Scottsdale,AZ,129,121,447
+Cambridge,MA,125,300,84
+Las Vegas,NV,125,291,215
+Santa Cruz,CA,125,127,133
+Charleston,SC,125,84,277
+San Rafael,CA,125,61,78
+Naples,FL,125,50,79
+Anchorage,AK,124,50,114
+Palo Alto,CA,120,100,110
+Santa Rosa,CA,120,71,229
+Brookline,MA,120,47,78
+Hollywood,FL,116,150,78
+Davenport,FL,113,108,35
+Mountain View,CA,113,72,155
+Colorado Springs,CO,113,54,170
+Brooklyn,NY,110,4368,94
+Los Angeles,CA,110,3236,174
+Kissimmee,FL,110,266,82
+Savannah,GA,107,91,55
+Arlington,VA,106,214,262
+Paris,RI,106,48,111
+Honolulu,HI,105,363,110
+Alexandria,VA,104,66,97
+Chicago,IL,100,1255,210
+Seattle,WA,100,824,102
+Philadelphia,PA,100,457,105
+Berkeley,CA,100,328,80
+Boulder,CO,100,265,126
+Houston,TX,100,175,402
+Fort Lauderdale,FL,100,151,434
+Long Beach,CA,100,113,91
+San Jose,CA,100,104,577
+Somerville,MA,100,99,105
+Pasadena,CA,100,86,384
+Tampa,FL,100,78,271
+Carlsbad,CA,100,54,149
+Queens,NY,99,457,313
+Minneapolis,MN,98,138,92
+Ann Arbor,MI,98,63,139
+Long Island City,NY,96,191,41
+Oakland,CA,90,434,119
+Tucson,AZ,90,195,68
+Salt Lake City,UT,90,140,100
+Glendale,CA,90,70,72
+Atlanta,GA,89,302,124
+Dallas,TX,87,114,279
+Denver,CO,86,283,63
+Phoenix,AZ,85,167,245
+Jersey City,NJ,85,82,59
+Eugene,OR,85,78,75
+Providence,RI,85,72,106
+Madison,WI,85,59,92
+Nashville,TN,80,185,64
+Baltimore,MD,80,137,60
+Pittsburgh,PA,80,99,43
+San Antonio,TX,80,77,65
+Portland,OR,79,819,138
+Orlando,FL,75,116,48
+Bronx,NY,75,113,60
+Albuquerque,NM,75,95,56
+Silver Spring,MD,75,53,77
+New Haven,CT,75,52,51
+Cincinnati,OH,70,47,214
+Sacramento,CA,65,57,44
+Durham,NC,60,63,72
+Raleigh,NC,60,57,69
