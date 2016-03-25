@@ -13,8 +13,8 @@ cityvals = collections.defaultdict(list)
 #   * leaving alone
 #   * alternative: collect into census MSAs
 # - some outliers with zero reviews- eg a $10000 tree fort in Park City. They could be excluded but where's the cutoff? Perhaps < 2 reviews?
+# - some outliers, like Indianapolis and Austin. Austin is an outlier for the number of entries, and Indianapolis is an outlier for the median price.
 
-c = 0
 with open(sys.argv[1]) as csvfile:
   r = csv.DictReader(csvfile, fieldnames=['id', 'city', 'state', 'price', 'reviews'])
   r.__next__() # skip header
@@ -24,20 +24,23 @@ with open(sys.argv[1]) as csvfile:
     # ensure we have the correct number of columns
     if len(row.items()) != 5 or intprice < 1 or len(row['city']) == 0 or len(row['state']) == 0:
       print('this seems to be a bogus row: {}'.format(' - '.join((row['city'], row['price'], row['reviews']))))
-      #c += 1
+
+    # quick code to exclude entries with less than two reviews
+    #if round(float(row['reviews'])) < 2:
+    #  continue
+
+    # making a composite key so we don't end up counting Portland Maine in the Portland Oregon bucket.
     citystate = '{}--{}'.format(row['city'].title(), row['state'].upper())
     cityvals[citystate].append(intprice)
-    if c > 5: break
 
-c=0
 citymedians = collections.defaultdict(list)
 for row in sorted(cityvals.items(), key=lambda x: len(x[1]), reverse=True)[:100]:
   citymedians[row[0]] = (round(statistics.median(row[1])), len(row[1]), round(statistics.pstdev(row[1])))
 
 print(','.join(('city', 'state', 'price median', 'listings', 'price stddev')))
 for row in sorted(citymedians.items(), key=lambda x: x[1], reverse=True):
-  c += 1
-  #if c > 5: break
   splitcity = row[0].split('--')
+
+  # weird/hacky looking code here because row[1] is a list.
   print(','.join(splitcity) + ',' + ','.join([str(x) for x in row[1]]))
 
